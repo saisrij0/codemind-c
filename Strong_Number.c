@@ -1,10 +1,7 @@
 #include<stdio.h>
-int main()
+int factsum(int n)
 {
-    int n,r,s=0;
-    scanf("%d",&n);
-    int temp,i,f=1;
-    temp=n;
+    int i,r,f=1,sum=0;
     while(n>0)
     {
         r=n%10;
@@ -13,14 +10,28 @@ int main()
         {
             f=f*i;
         }
-        s=s+f;
+        sum=sum+f;
         n=n/10;
     }
-    if(s==temp)
+    return sum;
+}
+int main()
+{
+    int t,i;
+    scanf("%d",&t);
+    for(i=0;i<t;i++)
     {
-        printf("The number %d is a strong number",temp);
-    }
-    else{
-        printf("The number %d is not a strong number",temp);
+        int n;
+        scanf("%d",&n);
+        int s=factsum(n);
+        if(s==n)
+        {
+            printf("Strong
+");
+        }
+        else{
+            printf("Not Strong
+");
+        }
     }
 }
