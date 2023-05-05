@@ -8,10 +8,10 @@ int main()
         r=n%10;
         if(r%2==0)
         {
-            e=e+1;
+            e++;
         }
         else{
-            o=o+1;
+            o++;
         }
         n=n/10;
     }
@@ -19,7 +19,7 @@ int main()
     {
         printf("Even");
     }
-    else if(e==0 && o>0)
+    else if(o>0 && e==0)
     {
         printf("Odd");
     }
