@@ -10,9 +10,9 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]==1 || a[i]==0)
+        if(a[i]==0 || a[i]==1)
         {
-            c=c+1;
+            c++;
         }
     }
     if(c==n)
