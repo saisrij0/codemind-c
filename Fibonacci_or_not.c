@@ -6,9 +6,6 @@ int main()
     c=a+b;
     while(1)
     {
-        a=b;
-        b=c;
-        c=a+b;
         if(c==n)
         {
             printf("True");
@@ -19,6 +16,8 @@ int main()
             printf("False");
             break;
         }
-        
+        a=b;
+        b=c;
+        c=a+b;
     }
 }
