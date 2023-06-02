@@ -28,12 +28,12 @@ int main()
             r=n%10;
             if(prime(r))
             {
-                mp=mp+1;
+                mp++;
             }
-            d=d+1;
+            d++;
             n=n/10;
         }
-        if(mp==d)
+        if(d==mp)
         {
             printf("Mega Prime");
         }
