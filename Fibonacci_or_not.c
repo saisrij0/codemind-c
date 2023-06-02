@@ -3,10 +3,10 @@ int main()
 {
     int n,a=0,b=1,c;
     scanf("%d",&n);
-    c=a+b;
     while(1)
     {
-        if(c==n)
+        c=a+b;
+        if(n==c)
         {
             printf("True");
             break;
@@ -18,6 +18,5 @@ int main()
         }
         a=b;
         b=c;
-        c=a+b;
     }
 }
