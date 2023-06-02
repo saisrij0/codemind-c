@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,c=0;
     scanf("%d",&n);
-    int i,c=0;
-    for(i=1;i<n;i++)
+    for(i=1;i<=n;i++)
     {
         if(n==i*i)
         {
             c=1;
+            break;
         }
     }
     if(c==1)
