@@ -1,10 +1,10 @@
 #include<stdio.h>
-int not_prime(int i)
+int non_prime(int n)
 {
-    int j,c=0;
-    for(j=1;j<=i;j++)
+    int i,c=0;
+    for(i=1;i<=n;i++)
     {
-        if(i%j==0)
+        if(n%i==0)
         {
             c++;
         }
@@ -19,17 +19,17 @@ int not_prime(int i)
 }
 int main()
 {
-    int n,i,r=0;
+    int n,i,c=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
         if(n%i==0)
         {
-            if(not_prime(i))
+            if(non_prime(i))
             {
-                r++;
+                c++;
             }
         }
     }
-    printf("%d",r);
+    printf("%d",c);
 }
